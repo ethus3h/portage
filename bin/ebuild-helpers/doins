@@ -30,6 +30,10 @@ else
 	DOINSRECUR=n
 fi
 
+if [[ "$1" == "--" ]] ; then
+	shift
+fi
+
 if ! ___eapi_has_prefix_variables; then
 	export ED="${D}"
 fi
