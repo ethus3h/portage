@@ -30,7 +30,7 @@ else
 	DOINSRECUR=n
 fi
 
-if [[ "$1" == "--" ]] ; then
+if ___eapi_has_doins_double_hyphen && [[ "$1" == "--" ]] ; then
 	shift
 fi
 
